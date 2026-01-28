@@ -20,7 +20,6 @@ The project supports user registration, login, authentication middleware, and pr
 
 ---
 
----
 
 ## 🛠️ Tech Stack
 
@@ -34,7 +33,6 @@ The project supports user registration, login, authentication middleware, and pr
 ---
 
 
----
 ## Auth flow
 **Register** → Password hashed (bcrypt) → Stored in DB
 **Login** → Password verified → JWT generated
@@ -47,16 +45,18 @@ The project supports user registration, login, authentication middleware, and pr
 
 ## ⚙️ Environment Variables
 
-Create a `.env` file in the root directory:
+### Create a `.env` file in the root directory:
 
 ```env
 PORT=4000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 NODE_ENV=development
+```
 ---
 
----
+## Steps to run this Repo
+
 1️⃣ Clone the repository
 git clone https://github.com/piyushchauhan3554/Task.git
 
