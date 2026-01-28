@@ -2,12 +2,11 @@ const User = require("../models/users");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-
 exports.registerUser = async (req, res) => {
   try {
-    const { name, email, password } = req.body;
+    const { name, email, password, role } = req.body;
 
-    if (!name || !email || !password) {
+    if (!name || !email || !password || !role) {
       return res.redirect("/api/auth/register?error=All fields are required");
     }
 
@@ -21,11 +20,12 @@ exports.registerUser = async (req, res) => {
     const newUser = await User.create({
       name,
       email,
-      password: hashedPassword
+      password: hashedPassword,
+      role // ✅ coming from frontend
     });
 
     const token = jwt.sign(
-      { id: newUser._id },
+      { id: newUser._id, role: newUser.role },
       process.env.JWT_SECRET,
       { expiresIn: "1d" }
     );
@@ -37,14 +37,14 @@ exports.registerUser = async (req, res) => {
       maxAge: 24 * 60 * 60 * 1000
     });
 
-    res.redirect("/api/auth/profile");
-
+    res.redirect("/profile");
 
   } catch (err) {
-    console.log(err);
+    console.error(err);
     res.status(500).send("Server error");
   }
 };
+
 
 
 exports.loginUser = async (req, res) => {
