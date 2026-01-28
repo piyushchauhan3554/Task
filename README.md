@@ -67,6 +67,10 @@ npm run start
 ### Server will run at:
 http://localhost:4000
 
+## 📸 Screenshots
+![Register]([screenshots/profile.png](https://github.com/piyushchauhan3554/Task/blob/master/screenshots/register.png))
+![Login]([screenshots/login.png](https://github.com/piyushchauhan3554/Task/blob/master/screenshots/login.png))
+![Profile]([screenshots/register.png](https://github.com/piyushchauhan3554/Task/blob/master/screenshots/profile.png))
 
 
 
