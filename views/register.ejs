@@ -35,6 +35,11 @@
       <a href="/api/auth/login">Login</a>
     </div>
   </div>
+<% if (typeof error !== "undefined") { %>
+  <script>
+    alert("<%= error %>");
+  </script>
+<% } %>
 
 </body>
 </html>
