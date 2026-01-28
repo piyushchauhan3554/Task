@@ -42,3 +42,45 @@ Protected Routes → JWT verified using middleware
 ---
 
 
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+PORT=4000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+
+---
+
+---
+1️⃣ Clone the repository
+git clone https://github.com//authentication-system.git
+cd Task
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Start the server
+npm run start
+
+Server will run at:
+http://localhost:4000
+
+
+## 📸 Screenshots
+
+### 🔐 Login Page
+![Login Page](screenshots/login.png)
+
+### 📝 Register Page
+![Register Page](screenshots/register.png)
+
+### 👤 User Profile
+![Profile Page](screenshots/profile.png)
+
+
+
+
