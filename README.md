@@ -35,10 +35,11 @@ The project supports user registration, login, authentication middleware, and pr
 
 
 ---
-Register → Password hashed (bcrypt) → Stored in DB
-Login → Password verified → JWT generated
-JWT → Stored in cookie / header
-Protected Routes → JWT verified using middleware
+## Auth flow
+**Register** → Password hashed (bcrypt) → Stored in DB
+**Login** → Password verified → JWT generated
+**JWT** → Stored in cookie / header
+**Protected Routes** → JWT verified using middleware
 ---
 
 
@@ -52,13 +53,12 @@ Create a `.env` file in the root directory:
 PORT=4000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
-
+NODE_ENV=development
 ---
 
 ---
 1️⃣ Clone the repository
-git clone https://github.com//authentication-system.git
-cd Task
+git clone https://github.com/piyushchauhan3554/Task.git
 
 2️⃣ Install dependencies
 npm install
@@ -70,16 +70,6 @@ Server will run at:
 http://localhost:4000
 
 
-## 📸 Screenshots
-
-### 🔐 Login Page
-![Login Page](screenshots/login.png)
-
-### 📝 Register Page
-![Register Page](screenshots/register.png)
-
-### 👤 User Profile
-![Profile Page](screenshots/profile.png)
 
 
 
