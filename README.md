@@ -41,8 +41,6 @@ The project supports user registration, login, authentication middleware, and pr
 ---
 
 
----
-
 ## ⚙️ Environment Variables
 
 ### Create a `.env` file in the root directory:
@@ -55,18 +53,18 @@ NODE_ENV=development
 ```
 ---
 
-## Steps to run this Repo
+## Steps to run this repo in your system
 
-1️⃣ Clone the repository
+### 1️⃣ Clone the repository
 git clone https://github.com/piyushchauhan3554/Task.git
 
-2️⃣ Install dependencies
+### 2️⃣ Install dependencies
 npm install
 
-3️⃣ Start the server
+### 3️⃣ Start the server
 npm run start
 
-Server will run at:
+### Server will run at:
 http://localhost:4000
 
 
